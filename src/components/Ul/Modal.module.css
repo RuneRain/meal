@@ -1,0 +1,39 @@
+.backDrop {
+  position:fixed;
+  top:0; left:0;
+  width:100%; height:100vh;
+  z-index:20;
+  background:rgba(0,0,0,0.6);
+}
+
+.modal {
+  background:#fff;
+  position:fixed;
+  top:20vh;
+  width:90%;
+  left:5%;
+  border-radius:1rem;
+  padding:1rem;
+  z-index:30;
+  box-shadow:0 5px 10px rgba(0, 0, 0, 0.4);
+  animation: slide-down 500ms ease-in-out;
+}
+
+@media(min-width:768px) {
+ .modal {
+  width:40rem;/* 640px */
+  left:calc(50% - 20rem);
+  /* 왼쪽 50% 여백 - (width: 40rem / 2 = 20rem ) */
+ } 
+}
+@keyframes slide-down {
+  0% {
+    opacity:0;
+    transform:translateY(-10rem);
+    /* Y : 위에서 시작 */
+  }
+  100% {
+    opacity:1;
+    transform:translateY(0);
+  }
+}

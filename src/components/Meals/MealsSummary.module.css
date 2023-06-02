@@ -1,0 +1,22 @@
+.summary {
+  background:var(--bg-color);
+  color:#eee;
+
+  /* 위치 올리기 공식 */
+  position:relative;
+  margin:auto;
+  margin-top:-10rem;
+
+  width:90%;
+  max-width:45rem; /* 720px */
+  padding:1rem;
+  border-radius:1rem;
+  text-align:center;
+  box-shadow:0 1px 18px 10px rgba(0,0,0,0.3);
+  /* 테두리 유지된 상태에서 10px정도만 그라디언트 주도록 */
+}
+
+.summary h2 {
+  font-size:2rem;
+  margin-top:0.2rem;
+}

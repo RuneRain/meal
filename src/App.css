@@ -1,0 +1,16 @@
+:root {
+  --main-color:#D4B8B6;
+  --mainAccent-color:#f7cac9;
+  --bg-color:#4F6188;
+  --bg2-color:#344765;
+  --accent-color:#939499;
+
+  /* mouse hover되면 사용 */
+  --accent2-color:#BBC8CA;
+}
+
+/*
+참고한 색상 파레트
+https://colorbada.com/colorbada/5484/
+↑↑ 현재 적용
+*/

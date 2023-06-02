@@ -1,0 +1,102 @@
+.cart-items {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.cart-items li {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:2px solid var(--bg-color);
+  padding:1rem 0;
+}
+
+.cart-items button {
+  cursor: pointer;
+  background: transparent;
+  border:1px solid var(--main-color);
+  border-radius: 0.3rem;
+  margin-left:0.3rem;
+  color:var(--bg-color);
+}
+
+.cart-items h2 {
+  margin:0 0 0.8rem 0;
+  color:var(--main-color);
+  font-size:1.2rem;
+}
+
+.btns {
+  display:flex;
+  flex-direction:row;
+}
+@media (max-width:768px){
+  .btns {flex-direction:column;}
+}
+
+.btns button {
+  cursor:pointer;
+  background: transparent;
+  border:1px solid var(--main-color);
+  border-radius:0.3rem;
+  margin:0.3rem;
+  color:var(--main-color);
+  font-size:1rem;
+  width:36px; height:40px;
+}
+
+.btns button:hover, .btns button:active {
+  background: var(--main-color);
+  color:white;
+} 
+
+.price {
+  color:var(--main-color);
+  font-weight:bold;
+}
+.amount {
+  margin-left:2rem;
+  border:1px solid #ccc;
+  padding:0.3rem 0.8rem;
+  border-radius:0.02rem;
+  color:#888;
+}
+
+.total {
+  display:flex;
+  justify-content:space-between;
+  margin:1rem 0;
+  font-size:1.5rem;
+  font-weight:bold;
+}
+
+.action {
+  text-align:right;
+}
+.action button {
+  padding:0.5rem 2rem;
+  border:1px solid var(--main-color);
+  border-radius:999px;
+  /* 원래 반지름 크기인데, 동그랗게 하고 싶은데 모름.
+  그럴 때면 999 많이 써 줌. */
+  background-color:transparent;
+  margin-left:1rem;
+  cursor:pointer;
+}
+.action .button-outline:hover, .action .button-outline:active {
+  border:1px solid var(--mainAccent-color);
+  color: var(--mainAccent-color);
+}
+.action .button:hover, .action .button:active {
+  border:1px solid var(--main-color);
+  color:#fff;
+}
+
+.action .button-outline {
+  color:var(--main-color);
+}
+
+.action .button {
+  background-color:var(--main-color);
+  color:#fff;
+}
